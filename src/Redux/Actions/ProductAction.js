@@ -1,18 +1,21 @@
-export const increment=()=>{
+export const increment=(value)=>{
    
    
     return  {  // action object 
-             type:'INCREMENT'
+             type:'INCREMENT',
+             payload: value
     }
 
     }
 
-export const decrement=()=>{
+export const decrement=(value)=>{
 
 
   return{
 
-    type:'DECREMENT'
+    type:'DECREMENT',
+    payload: value
+
   }
 
 

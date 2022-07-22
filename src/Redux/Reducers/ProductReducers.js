@@ -10,7 +10,7 @@ const myreducer=(state=initialstate,action)=>{
     case 'INCREMENT':
 
     return {...state,
-        numberinthestore: state.numberinthestore + 1
+        numberinthestore: state.numberinthestore + action.payload
 
     }
 break;
@@ -18,7 +18,7 @@ break;
     case 'DECREMENT':
         return{
          ...state,
-         numberinthestore: state.numberinthestore - 1
+         numberinthestore: state.numberinthestore - action.payload
 
 
         }

@@ -13,14 +13,14 @@ const dispatch=useDispatch();
 
 function incrementME(){
 
-  dispatch(increment())
+  dispatch(increment(1))
 
 }
 
 function decrement1(){
 
  // dispatch(myaction())
- dispatch(decrement())
+ dispatch(decrement(1))
 
 }
 

@@ -1,7 +1,7 @@
 
 
 const initialstate={
-    numberinthestore:10
+    numberinthestore:0
 }
 const myreducer=(state=initialstate,action)=>{
 
@@ -13,6 +13,15 @@ const myreducer=(state=initialstate,action)=>{
         numberinthestore: state.numberinthestore + 1
 
     }
+break;
+
+    case 'DECREMENT':
+        return{
+         ...state,
+         numberinthestore: state.numberinthestore - 1
+
+
+        }
 
     default:
         return state   }
